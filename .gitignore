@@ -1,0 +1,216 @@
+# ==============================================
+# Python Files - Standard ignores
+# ==============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==============================================
+# Virtual Environments - Hide all
+# ==============================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pipenv/
+poetry/
+
+# ==============================================
+# Development Tools - Hide from production
+# ==============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+
+# ==============================================
+# Project-Specific Test/Debug Files to Ignore
+# ==============================================
+# Test files created during development
+test_*.py
+*_test.py
+verify_*.py
+benchmark_*.py
+fix_*.py
+launch_*.py
+
+# Documentation files from development process
+*_SUMMARY.md
+*_COMPLETED*.md
+*_FINAL*.md
+FIX_*.md
+CLEANUP_*.md
+DEPLOYMENT.md
+GITHUB_STRUCTURE.md
+STREAMLIT_READY.md
+
+# Alternative app versions
+streamlit_app1.py
+app_*.py
+src/app_*.py
+
+# Temporary and backup files
+*.bak
+*.tmp
+*.log
+.dmypy.json
+dmypy.json
+
+# ==============================================
+# OS Files - Always ignore
+# ==============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==============================================
+# Streamlit - Keep config but hide secrets
+# ==============================================
+.streamlit/secrets.toml
+# Note: config.toml is kept for deployment
+
+# ==============================================
+# AI Models & Cache - Hide heavy files
+# ==============================================
+models/
+model_cache/
+*.model
+*.bin
+*.safetensors
+*.ggml
+*.gguf
+transformers_cache/
+huggingface_cache/
+
+# ==============================================
+# Development & Debug Files - Hide extras
+# ==============================================
+*.log
+logs/
+debug/
+debug_*.py
+test_*.py.bak
+temp_*.py
+
+# ==============================================
+# Temporary & Generated Files
+# ==============================================
+*.tmp
+*.temp
+temp/
+.temp/
+temp_audio/
+temp_video/
+temp_downloads/
+
+# ==============================================
+# Documentation Drafts - Keep only main README
+# ==============================================
+docs/
+docs/README.md
+docs/ENHANCEMENTS.md
+DEPLOYMENT.md
+HOW_IT_WORKS.md
+STREAMLIT_READY.md
+CLEANUP_SUMMARY.md
+GITHUB_STRUCTURE.md
+*.draft.md
+TODO.md
+NOTES.md
+dev_notes.txt
+FINAL_COMPLETION_REPORT.md
+DEPLOYMENT.md
+CLEANUP_SUMMARY.md
+README_CLEAN.md
+README_FIXED.md
+
+
+# ==============================================
+# Development Scripts - Hide from production
+# ==============================================
+scripts/dev/
+dev_scripts/
+debug_*.py
+experiment_*.py
+test_manual.py
+
+# ==============================================
+# Large Files & Media - Prevent accidental upload
+# ==============================================
+*.mp4
+*.mp3
+*.wav
+*.avi
+*.mov
+*.mkv
+*.webm
+*.m4a
+*.flac
+
+# ==============================================
+# Environment & Secrets - Critical security
+# ==============================================
+.env.*
+config.local.py
+secrets.py
+api_keys.txt
+*.key
+*.pem
+.auth_token
+
+# ==============================================
+# Backup Files - Keep repository clean
+# ==============================================
+*.bak
+*.backup
+*~
+*.orig
+*.rej
+
+# ==============================================
+# Package Manager Files - Hide lock files
+# ==============================================
+Pipfile.lock
+poetry.lock
+yarn.lock
+package-lock.json
+
+# ==============================================
+# Cloud Platform Specific - Hide deployment configs
+# ==============================================
+.vercel/
+.netlify/
+.railway/
+fly.toml
